@@ -8,7 +8,7 @@ let movies = [
     { id: 2, title: 'Microscopic Liquid Subway to Oblivion' }
 ];
 
-let nextId = 2;
+let nextId = 3;
 
 app.get("/movies", (req, res) => {
     res.send({ data: movies });

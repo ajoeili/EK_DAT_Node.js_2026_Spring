@@ -91,4 +91,18 @@ link:00._Course_Material/01._Assignments/03._Loop_Methods/CSS_Games.md[CSS Games
 link:00._Course_Material/01._Assignments/03._Loop_Methods/REST_API_Part_II.md[Movies REST API - Part II]
 
 
+| 04. HTML / Time
+| Feb. 19th
+a|
+* CRUDable REST API - Part II.
+* Fetch.
+* Time.
+* Deployment.
+a|
+* Can create a full CRUDable REST API that follows conventions.
+* Can write a fetch request without hesitation.
+* Can get the Date in Javascript.
+a|
+link:00._Course_Material/01._Assignments/04._Time/Time_To_Deploy.md[Time to deploy]
+
 |===

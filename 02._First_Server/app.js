@@ -48,11 +48,19 @@ app.get("/proxy", (req, res) => {
         This is called a proxy.
         You already have all the knowledge you need to solve this task
     */
-   fetch('https://www.google.com/')
+/*    fetch('https://www.google.com/')
    .then((response) => response.text())
    .then((result) => {
     res.send(result);
-   })
+   }); */
+
+    fetch("https://www.google.com/")
+    .then((response) => response.arrayBuffer())
+    .then((buffer) => {
+        const decoder = new TextDecoder("ISO-8859-1");
+        const text = decoder.decode(buffer);
+        res.send(text);
+    });
  
 });
 

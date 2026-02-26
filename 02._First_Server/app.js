@@ -24,6 +24,10 @@ app.get('/snowstorms', (req, res) => {
     res.send({ data: "Snowstorm is coming." });
 });
 
+app.get('/forecast', (req, res) => {
+    res.redirect("/snowstorms");
+});
+
 // Question: how can we send data in a GET request?
 
 // path variable

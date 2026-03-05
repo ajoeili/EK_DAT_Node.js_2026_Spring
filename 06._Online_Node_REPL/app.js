@@ -10,11 +10,11 @@ import path from 'path';
 // ================== Pages ==================
 
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve('public/frontend/frontend.html'));
+    res.sendFile(path.resolve('public/pages/frontend/frontend.html'));
 });
 
 app.get('/about', (req, res) => {
-    res.sendFile(path.resolve('public/about/about.html'));
+    res.sendFile(path.resolve('public/pages/about/about.html'));
 });
 
 // ================== API ==================
@@ -37,7 +37,10 @@ app.post('/api/repl', (req, res) => {
     const { error, success, output, result } = executeCodeInSandbox(sandbox, replCode);
 
     if (error) {
-        return res.status(500).send({ errorMessage: 'Error executing the provided code' });
+        return res.status(500).send({
+                    data: { error },
+                    errorMessage: 'Error executing the provided code'
+                });
     }
 
     res.send({ data: { success, output, result } });

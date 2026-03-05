@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="/assets/images/nodejs_logo.png">
+    
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/pages/frontend/frontend.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/styles/default.min.css">
 
     <title>Online Node.js REPL</title>
 </head>
@@ -19,9 +25,9 @@
     <main>
         <h1>Online Node.js REPL</h1>    
     
-        <h2>
-            > ...
-        </h2>
+
+        <p id="repl-code-output"></p>
+        <input id="repl-input">
     </main>
 
 
@@ -29,7 +35,8 @@
         <span id="copyright-year"></span>
     </footer>
 
-    <script src="/frontend/repl.js"></script>
     <script src="/assets/js/footer.js"></script>
+    <script src="/pages/frontend/repl.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/highlight.min.js"></script>
 </body>
 </html>
